@@ -5,7 +5,7 @@ FROM debian:buster-slim
 RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     build-essential \
-    rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*
 
 # create new linux user for execution
 RUN useradd -ms /bin/bash dns
