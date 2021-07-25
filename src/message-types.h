@@ -29,4 +29,18 @@ typedef struct
     uint16_t queryType;         // 2 byte uint
     uint16_t queryClass;        // "
 
+    // Answers section
+    char* domainName;
+    uint16_t dataType;
+    uint16_t dataClass;
+    uint32_t timeToLive;
+    uint16_t dataLength;
+    char* resourceData;
+
+    // Authoritative nameservers
+    // ...
+
+    // Additional Records
+    // ...
+
 } DNS_QUERY;
