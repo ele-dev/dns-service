@@ -15,8 +15,9 @@ WORKDIR /home/dns
 USER dns 
 
 # Copy the source files into the image
-# ...
-# Compile the source code
+COPY ./src/ /home/dns/
+
+# Compile source code and build executable
 RUN make
 
 # Run the application at container launch
