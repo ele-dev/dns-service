@@ -1,3 +1,5 @@
+server: Query.o Response.o
+
 Query.o: Query.cpp
 	g++ -c Query.cpp -std=c++14
 
